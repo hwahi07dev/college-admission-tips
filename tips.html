@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>College Admission Tips</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     * {
       margin: 0;
@@ -19,70 +18,71 @@
       overflow-x: hidden;
     }
 
-    .navout{
-          width: 100%;
-          height: 10%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-      }
+    .navout {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-      nav{
-          display: flex;
-          width: 60%;
-          height: 5%;
-          background: rgba(255, 255, 255, 0.8);
-          backdrop-filter: blur(8px);
-          position: fixed;
-          justify-content: space-between;
-          z-index: 1000;
-          margin-top: 100px;
-          padding: 20px;
-          padding-top: 30px;
-          padding-bottom: 30px;
-          border-radius: 25px;
-      }
+    nav {
+      display: flex;
+      width: 60%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+      position: fixed;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      margin-top: 100px;
+      padding: 20px 30px;
+      border-radius: 25px;
+      flex-wrap: wrap;
+    }
 
-      .logo{
-          font-family: "Pacifico", cursive;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 1.5em;
-          color: black;
-      }
+    .logo {
+      font-family: "Pacifico", cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      color: black;
+      text-align: center;
+    }
 
-      .hypers{
-          display: flex;
-      }
+    .hypers {
+      display: flex;
+      gap: 20px;
+    }
 
-      nav>ul{
-          list-style: none;
-          display: flex;
-          width: 30%;
-          justify-content: center;
-          align-items: center;
-          gap: 20px;
-      }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-      .links{
-          text-decoration: none;
-          color: black;
-          font-size: 1.3em;
-          border-radius: 10px;
-          padding: 10px;
-          transition: background 0.3s, color 0.3s;
-      }
+    .links {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+      border-radius: 10px;
+      padding: 10px 15px;
+      transition: background 0.3s, color 0.3s;
+    }
 
-      .active{
-          background-color: black;
-          color: white;
-      }
+    .active {
+      background-color: black;
+      color: white;
+    }
 
-      .links:hover{
-          background-color: gray;
-          color: white;
-      }
+    .links:hover {
+      background-color: gray;
+      color: white;
+    }
 
     .tips-section {
       padding: 10rem 10% 5rem;
@@ -161,12 +161,36 @@
       border-radius: 15px;
     }
 
-    @media (max-width: 900px) {
+    footer {
+      text-align: center;
+      padding: 3rem 0;
+      font-size: 1rem;
+      color: #aaa;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 50px;
+    }
+
+    @media (max-width: 1024px) {
+      nav {
+        width: 85%;
+      }
+    }
+
+    @media (max-width: 1208px) {
       nav {
         width: 90%;
         flex-direction: column;
-        gap: 10px;
         padding: 15px;
+        gap: 10px;
+        margin-top: 100px;
+      }
+
+      .logo {
+        font-size: 1.2rem;
+      }
+
+      .links {
+        font-size: 1rem;
       }
 
       .tips-section {
@@ -185,7 +209,46 @@
 
       .tip-image {
         width: 100%;
+        height: 250px;
+      }
+
+      .tip-content h2 {
+        font-size: 1.4rem;
+      }
+
+      .tip-content ul {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 1rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .tips-section {
+        padding: 7rem 5% 4rem;
+      }
+
+      .tip-content h2 {
+        font-size: 1.2rem;
+      }
+
+      .tip-content ul {
+        font-size: 0.9rem;
+      }
+
+      .tip-image {
         height: 200px;
+      }
+
+      footer {
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -215,7 +278,7 @@
         </ul>
       </div>
       <div class="tip-image">
-        <img src="https://images.unsplash.com/photo-1642175014539-23b986621dd4?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1926" alt="IIT College">
+        <img src="https://images.unsplash.com/photo-1642175014539-23b986621dd4?auto=format&fit=crop&q=80&w=1920" alt="IIT College" />
       </div>
     </div>
 
@@ -231,7 +294,7 @@
         </ul>
       </div>
       <div class="tip-image">
-        <img src="https://images.unsplash.com/photo-1581319751935-537a3ed76558?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1541" alt="Private College">
+        <img src="https://images.unsplash.com/photo-1581319751935-537a3ed76558?auto=format&fit=crop&q=80&w=1541" alt="Private College" />
       </div>
     </div>
 
@@ -247,7 +310,7 @@
         </ul>
       </div>
       <div class="tip-image">
-        <img src="https://images.unsplash.com/photo-1658604520420-7569f9685b69?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1074" alt="Abroad College">
+        <img src="https://images.unsplash.com/photo-1658604520420-7569f9685b69?auto=format&fit=crop&q=80&w=1074" alt="Abroad College" />
       </div>
     </div>
 
@@ -263,9 +326,13 @@
         </ul>
       </div>
       <div class="tip-image">
-        <img src="https://cdn.prod.website-files.com/62e8d2ea218fb7676b6892a6/67da76e2879cc03288595afe_Facilties%20card-3.avif" alt="Tech College">
+        <img src="https://cdn.prod.website-files.com/62e8d2ea218fb7676b6892a6/67da76e2879cc03288595afe_Facilties%20card-3.avif" alt="Tech College" />
       </div>
     </div>
   </section>
+
+  <footer>
+    <p>© 2025 Hardik Wahi. All rights reserved.</p>
+  </footer>
 </body>
 </html>
