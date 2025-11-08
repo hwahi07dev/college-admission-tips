@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Admission Tips</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: black;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .navout{
+          width: 100%;
+          height: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      nav{
+          display: flex;
+          width: 60%;
+          height: 5%;
+          background: rgba(255, 255, 255, 0.8);
+          backdrop-filter: blur(8px);
+          position: fixed;
+          justify-content: space-between;
+          z-index: 1000;
+          margin-top: 100px;
+          padding: 20px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          border-radius: 25px;
+      }
+
+      .logo{
+          font-family: "Pacifico", cursive;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5em;
+          color: black;
+      }
+
+      .hypers{
+          display: flex;
+      }
+
+      nav>ul{
+          list-style: none;
+          display: flex;
+          width: 30%;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+      }
+
+      .links{
+          text-decoration: none;
+          color: black;
+          font-size: 1.3em;
+          border-radius: 10px;
+          padding: 10px;
+          transition: background 0.3s, color 0.3s;
+      }
+
+      .active{
+          background-color: black;
+          color: white;
+      }
+
+      .links:hover{
+          background-color: gray;
+          color: white;
+      }
+
+    .tips-section {
+      padding: 10rem 10% 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .tip-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      gap: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .tip-box:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .tip-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 255, 179, 0.3);
+    }
+
+    .tip-content {
+      width: 60%;
+      overflow-y: auto;
+      padding-right: 10px;
+      scrollbar-width: none;
+    }
+
+    .tip-content::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tip-content h2 {
+      color: #00ffb3;
+      margin-bottom: 10px;
+      font-size: 1.7rem;
+    }
+
+    .tip-content ul {
+      list-style: disc;
+      margin-left: 20px;
+      line-height: 1.8;
+      font-size: 1rem;
+      color: #e5e5e5;
+    }
+
+    .tip-image {
+      width: 35%;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 100%;
+      opacity: 0.9;
+      transition: opacity 0.4s ease;
+    }
+
+    .tip-image:hover {
+      opacity: 1;
+    }
+
+    .tip-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        width: 90%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      .tips-section {
+        padding: 8rem 5% 4rem;
+      }
+
+      .tip-box {
+        flex-direction: column !important;
+        text-align: center;
+        height: auto;
+      }
+
+      .tip-content {
+        width: 100%;
+      }
+
+      .tip-image {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navout">
+    <nav>
+      <div class="logo">College Admission Tips</div>
+      <ul class="hypers">
+        <li><a href="index.html" class="links">HOME</a></li>
+        <li><a href="index.html#about" class="links">ABOUT</a></li>
+        <li><a href="tips.html" class="links active">GET TIPS</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="tips-section">
+    <div class="tip-box">
+      <div class="tip-content">
+        <h2>IITs, NITs & Engineering Colleges (JEE)</h2>
+        <ul>
+          <li>Focus heavily on JEE Mains and Advanced — your score is everything.</li>
+          <li>Boards matter only for eligibility (around 75%), not for selection.</li>
+          <li>Coaching helps, but self-discipline is key — mock tests every week.</li>
+          <li>Use resources like Allen modules, PW, or NTA sample papers.</li>
+          <li>Holistic skills or extracurriculars don’t carry much weight here.</li>
+        </ul>
+      </div>
+      <div class="tip-image">
+        <img src="https://images.unsplash.com/photo-1642175014539-23b986621dd4?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1926" alt="IIT College">
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-content">
+        <h2>Private Universities (BITS, VIT, SRM, etc.)</h2>
+        <ul>
+          <li>Entrance exams like BITSAT, VITEEE, SRMJEE are your ticket in.</li>
+          <li>English, reasoning, and math are equally important.</li>
+          <li>Boards or personal interviews have minor impact — exam rank rules.</li>
+          <li>Some offer direct admission for top board students.</li>
+          <li>Prepare smartly — these exams test speed, not just depth.</li>
+        </ul>
+      </div>
+      <div class="tip-image">
+        <img src="https://images.unsplash.com/photo-1581319751935-537a3ed76558?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1541" alt="Private College">
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-content">
+        <h2>Abroad Universities (US, UK, Canada)</h2>
+        <ul>
+          <li>Focus on academics, essays, and extracurricular balance.</li>
+          <li>SAT/ACT scores still matter for scholarships and admissions.</li>
+          <li>Build your profile early — internships, volunteering, and projects help.</li>
+          <li>Personal essays show personality — write authentically.</li>
+          <li>Get strong recommendation letters from teachers who actually know you.</li>
+        </ul>
+      </div>
+      <div class="tip-image">
+        <img src="https://images.unsplash.com/photo-1658604520420-7569f9685b69?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1074" alt="Abroad College">
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-content">
+        <h2>New-Age Colleges (Scaler, Newton School, Masai, etc.)</h2>
+        <ul>
+          <li>They prioritize skill over scores — your coding or portfolio matters more.</li>
+          <li>No traditional entrance exams — expect aptitude + interview rounds.</li>
+          <li>Showcase GitHub projects, hackathons, or tech blog contributions.</li>
+          <li>Stay consistent with personal branding on LinkedIn or X (Twitter).</li>
+          <li>Be ready to explain your motivation and career goals clearly.</li>
+        </ul>
+      </div>
+      <div class="tip-image">
+        <img src="https://cdn.prod.website-files.com/62e8d2ea218fb7676b6892a6/67da76e2879cc03288595afe_Facilties%20card-3.avif" alt="Tech College">
+      </div>
+    </div>
+  </section>
+</body>
+</html>

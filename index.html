@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Tips</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navout">
+            <nav>
+                <div class="logo">COLLEGE ADMISSION TIPS</div>
+                <ul class="hypers">
+                    <li><a href="#home" class="links active">HOME</a></li>
+                    <li><a href="#about" class="links">ABOUT</a></li>
+                    <li><a href="/tips.html" class="links">GET TIPS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="background.mp4" type="video/mp4">
+            Background Couldn't Render!
+        </video>
+        <div class="hero-content">
+            <div class="title">The Real Deal on Applying <span href="#tips">To College</span></div>
+            <div class="subtitle">Because getting into your dream college shouldn’t feel like rocket science.</div>
+            <div class="buttoncontainer">
+                <div class="get-tips" onclick="document.querySelector('#tips').scrollIntoView({behavior:'smooth'})">Get Tips</div>
+                <div class="contact" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Contact Us</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="abt-content">
+            <div class="box-content">
+                <h2>About Us</h2>
+                <p>
+                    Getting into college shouldn’t feel like decoding a secret manual. We created 
+                    <strong>College Admission Tips</strong> to make the process actually make sense — no fluff, no confusing jargon, 
+                    just straight-up guidance that works.<br><br>
+                    Whether you’re figuring out where to apply, stressing over essays, or just trying to understand what 
+                    “holistic admission” even means — we’ve got you.<br><br>
+                    Our goal? To help students from <strong>any country</strong> navigate the entire process smoothly — from picking 
+                    the right college to preparing a strong application and managing deadlines without burning out.<br><br>
+                    We share real advice, from real experiences, to help you take control of your college journey with confidence.<br><br>
+                    Because getting into your dream college isn’t about luck — it’s about the right plan, mindset, and a few insider tricks!
+                </p>
+            </div>
+            <div class="box-img">
+                <img src="abt-pic.png" alt="Photo Not Available">
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="why-tips">
+        <h2>Why Getting Tips Is Important</h2>
+        <div class="tips-container">
+            <div class="tip-card">
+                <h3>⏰ Save Time</h3>
+                <p>Learn exactly what matters and skip the endless guesswork — focus your energy where it counts.</p>
+            </div>
+            <div class="tip-card">
+                <h3>🧭 Stay on Track</h3>
+                <p>From deadlines to documents, guidance helps you keep everything organized and stress-free.</p>
+            </div>
+            <div class="tip-card">
+                <h3>💡 Stand Out</h3>
+                <p>Tips show you how to make your application shine — essays, interviews, and all that jazz.</p>
+            </div>
+            <div class="tip-card">
+                <h3>🚀 Boost Confidence</h3>
+                <p>Knowing what to expect turns panic into power. You’ll walk into the process ready to win.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <video autoplay muted loop playsinline class="contact-bg">
+            <source src="contactbg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="contact-overlay">
+            <h2>Contact Us</h2>
+            <p>Got questions? We’d love to help you out! Just drop your message below</p>
+            <form class="contact-form" action="https://formspree.io/f/xrboodok" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p class="form-status"></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="footer-logo">College Admission Tips</h2>
+            <p class="footer-text">
+            Helping students make smarter choices — one tip at a time.<br>
+            Built with ❤️ for students everywhere.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
